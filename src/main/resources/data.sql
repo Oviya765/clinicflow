@@ -51,8 +51,8 @@
 -- (2, 2, 'XR-CHEST', 'Mild bronchitic changes', 'TEXT', '{"type":"narrative"}', 'ABNORMAL', '2026-04-11 16:30:00', 1);
 
 -- INSERT INTO inventory_items (inventory_id, medication_id, batch_number, quantity, unit, expiry_date, location, cost_price, status) VALUES
--- (1, 1, 'PCM-250401', 500, 'TABLET', '2027-03-31', 'Pharmacy Rack A1', 1.20, 'IN_STOCK'),
--- (2, 2, 'AMX-250402', 300, 'CAPSULE', '2027-06-30', 'Pharmacy Rack B2', 2.80, 'IN_STOCK');
+-- (1, 1, 'PCM-250401', 500, 'TABLET', '2027-03-31', 'Pharmacist Rack A1', 1.20, 'IN_STOCK'),
+-- (2, 2, 'AMX-250402', 300, 'CAPSULE', '2027-06-30', 'Pharmacist Rack B2', 2.80, 'IN_STOCK');
 
 -- INSERT INTO invoices (invoice_id, patient_id, encounter_id, line_items_json, subtotal, taxes, discounts, total_amount, issued_at, due_date, status) VALUES
 -- (1, 1, 1, '[{"code":"SRV001","amount":500.00},{"code":"SRV002","amount":350.00}]', 850.00, 45.00, 50.00, 845.00, '2026-04-10 10:00:00', '2026-04-15', 'PARTIALLY_PAID'),
@@ -85,5 +85,4 @@
 -- INSERT INTO audit_logs (audit_id, user_id, action, resource_type, resource_id, details_json, timestamp) VALUES
 -- (1, 2, 'CREATE', 'PATIENT', '1', '{"field":"patient","source":"reception"}', '2026-04-01 10:00:30'),
 -- (2, 1, 'UPDATE', 'ENCOUNTER', '2', '{"field":"diagnosesJson","source":"clinician"}', '2026-04-11 11:31:00');
-
 

@@ -5,7 +5,7 @@ public enum Roles {
     PATIENT,
     RECEPTION,
     CLINICIAN,
-    PHARMACY,
+    PHARMACIST,
     LAB_TECHNICIAN,
     FINANCE_OFFICER,
     CLINIC_MANAGER,
