@@ -1,0 +1,5 @@
+2026-06-15 22:10:57.335 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-15 22:18:49.628 [http-nio-8081-exec-4] INFO  c.H.service.AuthService - Attempting authentication for user with email: admin1@clinicflow.com
+2026-06-15 22:20:13.974 [http-nio-8081-exec-4] WARN  c.H.service.AuthService - Authentication failed: Invalid credentials for email: admin1@clinicflow.com
+2026-06-15 22:21:21.659 [http-nio-8081-exec-10] INFO  c.H.service.AuthService - Attempting authentication for user with email: admin@clinicflow.com
+2026-06-15 22:21:33.112 [http-nio-8081-exec-10] INFO  c.H.service.AuthService - User authenticated successfully - Email: admin@clinicflow.com, Role: ADMIN

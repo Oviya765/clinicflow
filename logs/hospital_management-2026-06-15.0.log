@@ -1,0 +1,266 @@
+2026-06-15 22:10:02.538 [restartedMain] INFO  c.H.HospitalManagementApplication - Starting HospitalManagementApplication using Java 19.0.2 with PID 38476 (E:\CLINIC-FLOW\INTADM26JFSR004--CLINIC-FLOW\backend\target\classes started by OVIYA in E:\CLINIC-FLOW\INTADM26JFSR004--CLINIC-FLOW\backend)
+2026-06-15 22:10:02.560 [restartedMain] DEBUG c.H.HospitalManagementApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-06-15 22:10:02.567 [restartedMain] INFO  c.H.HospitalManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-15 22:10:25.988 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-15 22:10:28.352 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-15 22:10:28.355 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-15 22:10:29.199 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-15 22:10:38.913 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d7ab14
+2026-06-15 22:10:38.937 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-15 22:10:45.120 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 22:10:57.335 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-15 22:10:57.989 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-06-15 22:10:57.991 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-06-15 22:10:59.524 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 22:11:03.283 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-15 22:11:03.427 [restartedMain] INFO  c.H.HospitalManagementApplication - Started HospitalManagementApplication in 62.989 seconds (process running for 68.791)
+2026-06-15 22:11:03.445 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-15 22:11:03.462 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-15 22:17:10.064 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15 22:17:10.207 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-15 22:17:11.162 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 945 ms
+2026-06-15 22:17:25.919 [http-nio-8081-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 9194 ms
+2026-06-15 22:18:49.628 [http-nio-8081-exec-4] INFO  c.H.service.AuthService - Attempting authentication for user with email: admin1@clinicflow.com
+2026-06-15 22:19:59.633 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:20:13.974 [http-nio-8081-exec-4] WARN  c.H.service.AuthService - Authentication failed: Invalid credentials for email: admin1@clinicflow.com
+2026-06-15 22:20:14.251 [http-nio-8081-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 401 UNAUTHORIZED "Invalid email or password"]
+2026-06-15 22:21:21.659 [http-nio-8081-exec-10] INFO  c.H.service.AuthService - Attempting authentication for user with email: admin@clinicflow.com
+2026-06-15 22:21:21.793 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:31.364 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:33.112 [http-nio-8081-exec-10] INFO  c.H.service.AuthService - User authenticated successfully - Email: admin@clinicflow.com, Role: ADMIN
+2026-06-15 22:21:36.252 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:36.655 [http-nio-8081-exec-5] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:21:37.493 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:21:37.744 [http-nio-8081-exec-5] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:21:38.592 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:38.665 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:38.923 [http-nio-8081-exec-1] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:21:39.020 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:21:39.034 [http-nio-8081-exec-6] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:21:39.115 [http-nio-8081-exec-1] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:21:39.134 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:21:39.300 [http-nio-8081-exec-6] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:21:39.543 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:21:39.760 [http-nio-8081-exec-2] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:21:39.821 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:21:39.887 [http-nio-8081-exec-2] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:49:35.603 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:49:38.426 [http-nio-8081-exec-10] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:49:39.126 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:49:39.602 [http-nio-8081-exec-10] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:49:40.408 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:49:40.480 [http-nio-8081-exec-9] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:49:40.493 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:49:40.521 [http-nio-8081-exec-9] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:50:19.303 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:19.435 [http-nio-8081-exec-1] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:50:19.465 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:50:19.500 [http-nio-8081-exec-1] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:50:19.551 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:19.569 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:19.616 [http-nio-8081-exec-6] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:50:19.632 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:50:19.649 [http-nio-8081-exec-6] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:50:19.665 [http-nio-8081-exec-7] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:50:19.727 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:50:19.777 [http-nio-8081-exec-7] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:50:19.882 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:20.003 [http-nio-8081-exec-4] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:50:20.039 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:50:20.082 [http-nio-8081-exec-4] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:50:43.614 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:43.684 [http-nio-8081-exec-9] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:50:43.702 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:50:43.728 [http-nio-8081-exec-9] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:50:43.783 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:43.815 [http-nio-8081-exec-5] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:50:43.829 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:50:43.841 [http-nio-8081-exec-5] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:50:50.230 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:50.315 [http-nio-8081-exec-2] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:50:50.339 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:50:50.354 [http-nio-8081-exec-2] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:50:50.443 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:50.479 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:50.534 [http-nio-8081-exec-6] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:50:50.544 [http-nio-8081-exec-4] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:50:50.552 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:50:50.557 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:50:50.572 [http-nio-8081-exec-4] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:50:50.574 [http-nio-8081-exec-6] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:50:50.678 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:50.723 [http-nio-8081-exec-8] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:50:50.732 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:50:50.743 [http-nio-8081-exec-8] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:50:54.213 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:54.308 [http-nio-8081-exec-5] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:50:54.324 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:50:54.353 [http-nio-8081-exec-5] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:50:54.433 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:50:54.562 [http-nio-8081-exec-1] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 22:50:54.612 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 22:50:55.015 [http-nio-8081-exec-1] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 22:51:02.905 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:51:02.962 [http-nio-8081-exec-7] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:51:02.972 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:51:02.985 [http-nio-8081-exec-7] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:51:03.028 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:51:03.035 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:51:03.076 [http-nio-8081-exec-4] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 22:51:03.082 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 22:51:03.087 [http-nio-8081-exec-4] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 22:51:03.087 [http-nio-8081-exec-8] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:51:03.101 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:51:03.109 [http-nio-8081-exec-8] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 22:51:03.145 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 22:51:03.192 [http-nio-8081-exec-10] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 22:51:03.209 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 22:51:03.212 [http-nio-8081-exec-10] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:02:29.713 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:02:30.283 [http-nio-8081-exec-3] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:02:30.412 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:02:30.440 [http-nio-8081-exec-3] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:02:30.659 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:02:30.699 [http-nio-8081-exec-7] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:02:30.721 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:02:30.739 [http-nio-8081-exec-7] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:31:59.022 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:31:59.561 [http-nio-8081-exec-8] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:31:59.736 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:31:59.760 [http-nio-8081-exec-8] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:32:00.028 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:32:00.076 [http-nio-8081-exec-5] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:32:00.096 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:32:00.103 [http-nio-8081-exec-5] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:32:00.970 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:32:01.054 [http-nio-8081-exec-1] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:32:01.086 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:32:01.184 [http-nio-8081-exec-1] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:32:01.238 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:32:01.295 [http-nio-8081-exec-3] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:32:01.305 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:32:01.345 [http-nio-8081-exec-3] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:39:50.185 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:50.185 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:50.185 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:50.185 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:50.185 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:50.185 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:51.238 [http-nio-8081-exec-9] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:39:51.241 [http-nio-8081-exec-2] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:39:51.238 [http-nio-8081-exec-7] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:39:51.411 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:39:51.411 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:39:51.411 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:39:51.446 [http-nio-8081-exec-9] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:39:51.446 [http-nio-8081-exec-2] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:39:51.483 [http-nio-8081-exec-7] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 23:39:52.703 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:52.729 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:52.760 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:53.065 [http-nio-8081-exec-3] DEBUG c.H.service.InvoiceService - Fetching all invoices
+2026-06-15 23:39:53.084 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:39:53.093 [http-nio-8081-exec-5] DEBUG c.H.service.PaymentService - Fetching all payments
+2026-06-15 23:39:53.188 [http-nio-8081-exec-6] DEBUG c.H.service.LabOrderService - Fetching all lab orders
+2026-06-15 23:39:53.320 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select p1_0.payment_id,p1_0.amount,p1_0.invoice_id,p1_0.method,p1_0.paid_at,p1_0.patient_id,p1_0.status from payment p1_0
+2026-06-15 23:39:53.325 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select lo1_0.lab_order_id,lo1_0.collected_at,lo1_0.encounter_id,lo1_0.ordered_by_fk,lo1_0.patient_id,lo1_0.result_uri,lo1_0.sample_id,lo1_0.status,lo1_0.tests_json from lab_order lo1_0
+2026-06-15 23:39:53.332 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select i1_0.invoice_id,i1_0.discounts,i1_0.due_date,i1_0.encounter_id,i1_0.issued_at,i1_0.line_items_json,i1_0.patient_id,i1_0.status,i1_0.subtotal,i1_0.taxes,i1_0.total_amount from invoice i1_0
+2026-06-15 23:39:53.423 [http-nio-8081-exec-6] INFO  c.H.service.LabOrderService - Retrieved 0 lab orders
+2026-06-15 23:39:53.554 [http-nio-8081-exec-5] INFO  c.H.service.PaymentService - Total payments retrieved: 0
+2026-06-15 23:39:53.626 [http-nio-8081-exec-3] INFO  c.H.service.InvoiceService - Retrieved 0 invoices
+2026-06-15 23:39:54.066 [http-nio-8081-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "clinicians"]
+2026-06-15 23:39:54.067 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-06-15 23:44:09.752 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:09.753 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:09.793 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:09.753 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:09.752 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:09.752 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:11.918 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:11.956 [http-nio-8081-exec-5] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:44:11.957 [http-nio-8081-exec-4] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:44:11.957 [http-nio-8081-exec-10] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:44:11.998 [http-nio-8081-exec-3] DEBUG c.H.service.LabOrderService - Fetching all lab orders
+2026-06-15 23:44:12.375 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:12.415 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:44:12.416 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select lo1_0.lab_order_id,lo1_0.collected_at,lo1_0.encounter_id,lo1_0.ordered_by_fk,lo1_0.patient_id,lo1_0.result_uri,lo1_0.sample_id,lo1_0.status,lo1_0.tests_json from lab_order lo1_0
+2026-06-15 23:44:12.414 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:44:12.416 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:44:12.454 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-06-15 23:44:12.602 [http-nio-8081-exec-3] INFO  c.H.service.LabOrderService - Retrieved 0 lab orders
+2026-06-15 23:44:12.603 [http-nio-8081-exec-5] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:44:12.603 [http-nio-8081-exec-4] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:44:12.628 [http-nio-8081-exec-10] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 23:44:12.649 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:44:12.673 [http-nio-8081-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "clinicians"]
+2026-06-15 23:44:12.693 [http-nio-8081-exec-7] DEBUG c.H.service.PaymentService - Fetching all payments
+2026-06-15 23:44:12.725 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select p1_0.payment_id,p1_0.amount,p1_0.invoice_id,p1_0.method,p1_0.paid_at,p1_0.patient_id,p1_0.status from payment p1_0
+2026-06-15 23:44:12.736 [http-nio-8081-exec-7] INFO  c.H.service.PaymentService - Total payments retrieved: 0
+2026-06-15 23:45:17.326 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:17.396 [http-nio-8081-exec-5] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:45:17.410 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:45:17.451 [http-nio-8081-exec-5] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:45:17.563 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:17.675 [http-nio-8081-exec-10] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:45:17.700 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:45:17.729 [http-nio-8081-exec-10] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:45:19.629 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.644 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.684 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.694 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.694 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.696 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.759 [http-nio-8081-exec-10] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:45:19.790 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:45:19.824 [http-nio-8081-exec-5] DEBUG c.H.service.PaymentService - Fetching all payments
+2026-06-15 23:45:19.822 [http-nio-8081-exec-10] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:45:19.865 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select p1_0.payment_id,p1_0.amount,p1_0.invoice_id,p1_0.method,p1_0.paid_at,p1_0.patient_id,p1_0.status from payment p1_0
+2026-06-15 23:45:19.864 [http-nio-8081-exec-4] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:45:19.901 [http-nio-8081-exec-3] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:45:19.912 [http-nio-8081-exec-5] INFO  c.H.service.PaymentService - Total payments retrieved: 0
+2026-06-15 23:45:19.921 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-06-15 23:45:19.927 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:19.931 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:45:19.941 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:45:19.997 [http-nio-8081-exec-4] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:45:20.038 [http-nio-8081-exec-3] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 23:45:20.041 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.066 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.080 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.160 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.200 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.226 [http-nio-8081-exec-7] DEBUG c.H.service.LabOrderService - Fetching all lab orders
+2026-06-15 23:45:20.266 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select lo1_0.lab_order_id,lo1_0.collected_at,lo1_0.encounter_id,lo1_0.ordered_by_fk,lo1_0.patient_id,lo1_0.result_uri,lo1_0.sample_id,lo1_0.status,lo1_0.tests_json from lab_order lo1_0
+2026-06-15 23:45:20.268 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.287 [http-nio-8081-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "clinicians"]
+2026-06-15 23:45:20.293 [http-nio-8081-exec-5] DEBUG c.H.service.PatientService - Fetching all patients from registry
+2026-06-15 23:45:20.318 [http-nio-8081-exec-7] INFO  c.H.service.LabOrderService - Retrieved 0 lab orders
+2026-06-15 23:45:20.344 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select p1_0.patient_id,p1_0.address_json,p1_0.contact_info_json,p1_0.created_at,p1_0.dob,p1_0.gender,p1_0.insurance_id,p1_0.mrn,p1_0.name,p1_0.primary_contact,p1_0.status,p1_0.updated_at,p1_0.version from patients p1_0
+2026-06-15 23:45:20.394 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.397 [http-nio-8081-exec-5] INFO  c.H.service.PatientService - Retrieved 0 patients from registry
+2026-06-15 23:45:20.424 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.440 [http-nio-8081-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-06-15 23:45:20.480 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.479 [http-nio-8081-exec-9] DEBUG c.H.service.PaymentService - Fetching all payments
+2026-06-15 23:45:20.528 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select p1_0.payment_id,p1_0.amount,p1_0.invoice_id,p1_0.method,p1_0.paid_at,p1_0.patient_id,p1_0.status from payment p1_0
+2026-06-15 23:45:20.571 [http-nio-8081-exec-9] INFO  c.H.service.PaymentService - Total payments retrieved: 0
+2026-06-15 23:45:20.579 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.592 [http-nio-8081-exec-6] DEBUG c.H.service.AppointmentService - Fetching all appointments
+2026-06-15 23:45:20.632 [http-nio-8081-exec-2] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:45:20.687 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:45:20.716 [http-nio-8081-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "clinicians"]
+2026-06-15 23:45:20.736 [http-nio-8081-exec-2] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 23:45:20.751 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:45:20.785 [http-nio-8081-exec-1] DEBUG c.H.service.LabOrderService - Fetching all lab orders
+2026-06-15 23:45:20.800 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - select a1_0.appt_id,a1_0.clinician_id,a1_0.created_at,a1_0.created_by,a1_0.department,a1_0.end_at,a1_0.patient_id,a1_0.service_type,a1_0.start_at,a1_0.status from appointments a1_0
+2026-06-15 23:45:20.800 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select lo1_0.lab_order_id,lo1_0.collected_at,lo1_0.encounter_id,lo1_0.ordered_by_fk,lo1_0.patient_id,lo1_0.result_uri,lo1_0.sample_id,lo1_0.status,lo1_0.tests_json from lab_order lo1_0
+2026-06-15 23:45:20.820 [http-nio-8081-exec-1] INFO  c.H.service.LabOrderService - Retrieved 0 lab orders
+2026-06-15 23:45:20.821 [http-nio-8081-exec-6] INFO  c.H.service.AppointmentService - Retrieved 0 appointments
+2026-06-15 23:51:18.104 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:51:18.324 [http-nio-8081-exec-2] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:51:18.393 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:51:18.426 [http-nio-8081-exec-2] INFO  c.H.service.AdminUserService - Retrieved 3 users
+2026-06-15 23:51:18.549 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0 where u1_0.email=?
+2026-06-15 23:51:18.611 [http-nio-8081-exec-1] DEBUG c.H.service.AdminUserService - Fetching all users
+2026-06-15 23:51:18.618 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role,u1_0.status,u1_0.updated_at from users u1_0
+2026-06-15 23:51:18.637 [http-nio-8081-exec-1] INFO  c.H.service.AdminUserService - Retrieved 3 users

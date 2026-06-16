@@ -1,0 +1,5 @@
+2026-06-07 18:41:48.850 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-07 23:49:24.934 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-07 23:49:24.964 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-07 23:49:25.167 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
+2026-06-07 23:49:25.348 [restartedMain] DEBUG c.H.config.AuthenticationFilter - Filter 'authenticationFilter' configured for use
