@@ -105,7 +105,7 @@ public class LabController {
 
     @DeleteMapping("/orders/{labOrderId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @PreAuthorize("hasAuthority('ADMIN')")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'CLINICIAN')")
     public LabOrderResponseDto cancelOrder(@PathVariable Long labOrderId) {
         return labOrderService.cancelOrder(labOrderId);
     }
